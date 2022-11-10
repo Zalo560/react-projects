@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-let Navbar = () => {
+let Navbar = (props) => {
   return (
     <div className="navbar">
       <h1>Money Moves</h1>
