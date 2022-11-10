@@ -5,8 +5,8 @@ let ExpenseComponent = (props) => {
 
   return (
     <div className="expense-component-item">
-      <ExpenseDate date={props.date} /> {/*passing the date prop to ExpenseDate*/}
-      <div className="expense-component-description">
+      <ExpenseDate date={props.date} />
+      <div className="expense-component-details">
         <h2 className="expense-component-title">{props.title}</h2>
         <div className="expense-component-amount">${props.amount}</div>
       </div>
