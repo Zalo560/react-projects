@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Expenses from "./components/Expenses";
-import "./components/Navbar.css";
- 
+import Card from "./components/Card";
+
 function App() {
   const expenses = [
     {
@@ -33,11 +33,14 @@ function App() {
   return (
     <div>
       <div>
-      <Navbar />
+        <Navbar />
       </div>
-      <div>
-      <Expenses items={expenses} />
-      </div>
+      <Card>
+        <div>To add graphs/charts</div>
+        <div>
+          <Expenses items={expenses} />
+        </div>
+      </Card>
     </div>
   );
 }

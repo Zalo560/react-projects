@@ -4,7 +4,7 @@ let Navbar = (props) => {
   return (
     <div className="navbar">
       <h1>Money Moves</h1>
-      <div>
+      <div className="navbar-buttons">
         <button>Home</button>
         <button>Summary</button>
         <button>Networth</button>
