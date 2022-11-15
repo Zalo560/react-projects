@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Expenses from "./components/Expenses";
-import Card from "./components/Card";
+// import Card from "./components/Card";
+import NewExpenseComponent from "./components/NewComponents/NewExpenseComponent";
 
 function App() {
   const expenses = [
@@ -35,12 +36,14 @@ function App() {
       <div>
         <Navbar />
       </div>
-      <Card>
-        <div>To add graphs/charts</div>
+      {/* <Card> */}
+        <div>
+          <NewExpenseComponent />
+        </div>
         <div>
           <Expenses items={expenses} />
         </div>
-      </Card>
+      {/* </Card> */}
     </div>
   );
 }

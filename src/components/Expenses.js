@@ -1,5 +1,5 @@
 import ExpenseComponent from "./ExpenseComponent";
-import "./Expenses.css";
+import "./Styles/Expenses.css";
 
 let Expenses = (props) => {
   return (
