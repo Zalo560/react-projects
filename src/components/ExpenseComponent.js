@@ -6,7 +6,7 @@ import ExpenseDate from "./ExpenseDate";
 let ExpenseComponent = (props) => {
   const [title, setTitle] = useState(props.title);
 
-  const clickHandler = () => {
+  const editButtonClickHandler = () => {
     setTitle("Updated!");
     console.log(title);
   };
@@ -17,7 +17,7 @@ let ExpenseComponent = (props) => {
         <ExpenseDate date={props.date} />
         <h2 className="expense-component-title">{title}</h2>
         <div className="expense-component-amount">${props.amount}</div>
-        <button className="expense-component-edit-button" onClick={clickHandler}>Edit</button>
+        <button className="expense-component-edit-button" onClick={editButtonClickHandler}>Edit</button>
       </div>
     </Card>
   );

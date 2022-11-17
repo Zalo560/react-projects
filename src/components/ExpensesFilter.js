@@ -17,6 +17,13 @@ const ExpensesFilter = (props) => {
           <option value='2020'>2020</option>
           <option value='2019'>2019</option>
         </select>
+        {/* <label>Filter by month</label>
+        <select value={props.selected} onChange={dropdownChangeHandler}>
+          <option value='Jan'>Jan</option>
+          <option value='Feb'>Feb</option>
+          <option value='Mar'>Mar</option>
+          <option value='Apr'>Apr</option>
+        </select> */}
       </div>
     </div>
   );
